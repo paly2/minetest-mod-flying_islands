@@ -9,6 +9,7 @@ local function make_island(pos, facedir, length)
 	worldedit.dome(pos, -radius, "default:dirt", false)
 	
 	-- Add trees
+	pos.y = pos.y+1
 	for l1 = -(radius/2), radius/2 do
 		for l2 = -(radius/2), radius/2 do
 			if math.random(0,math.floor(radius/5)) == 0 then
